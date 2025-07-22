@@ -1,4 +1,4 @@
-# Data-Access-for-Lower-Limb-Dataset
+# Codes for the paper: Optimizing Sensor and Data Selection on Lower Limbs via Deep Learning for Real-Time Human Activity Recognition
 The goal of this repository is ro generate segmented data for selected labeled activities and selected sensor channels for all trials, selected ambulations, and selected subjects.
 
 This repository should be downloaded and run together with the EpicToolbox by EPIC Lab, GaTech.
