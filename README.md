@@ -1,4 +1,8 @@
 # Codes for the paper: Optimizing Sensor and Data Selection on Lower Limbs via Deep Learning for Real-Time Human Activity Recognition
+This repository includes 3 parts: data preprocessing (MATLAB), 3 deep learning models (Python) and model inference (Python).
+
+## **Data preprocessing**
+
 The goal of this repository is ro generate segmented data for selected labeled activities and selected sensor channels for all trials, selected ambulations, and selected subjects.
 
 This repository should be downloaded and run together with the EpicToolbox by EPIC Lab, GaTech.
@@ -32,12 +36,6 @@ Now angular velocity of IK data is updated under 'ik' folder. (09/05/2023)
 - Added a feature extraction function "Feature_Extraction_New.m". So far the features provided are: MAD, STD, Min, Max and the last value of a window.
 - Added a normalization function "Normalization.m". This function is only used in batch running to generate data of multiple subjects.
 
-Extra script:
-- "Combine_Files.m" is to stack windows and labels among subjects. It will also separate the dataset to apply cross-validation. 
-
-Extra functions:
-- 'Separate_Gravity.m' and 'Separate_Gravity_ENMO.m' provide 3 metrics: ENMO, HFEN and HFEN+ to remove gravity part in accelaration in 'imu' set. These 2 functions need to be cooperated with the 2 filter functions "butterworth_high_pass.m" and 'butterworth_low_pass.m'.
-
 How to use the dataset and this respository:
 The dataset contains 22 zipped package subject data, and you may need to download the data 1 by 1. Apart from the subject data there are 2 other files and 1 package, "README.txt", "SubjectInfo.mat", and "script".
 
@@ -54,4 +52,14 @@ Settings:
 - The rest of the settings are in Data_Access_Main.m
 
 The path for output files are customed in Data_Access_4.m.
+
+
+## **Deep learning models**
+
+All 3 deep learning models (LSTM, CNN-LSTM and MLP) are provided. LSTM and CNN-LSTM models are based on Tensorflow, and the MLP model is based on Pytorch. The file paths, names of the datasets, and training settings are vacant.
+
+
+## **Model inference**
+
+All 3 deep learning models (LSTM, CNN-LSTM and MLP) are provided. LSTM and CNN-LSTM models shares the same code, you can switch the model by commenting the correspoding parts. The file paths, names of the datasets are vacant.
 
