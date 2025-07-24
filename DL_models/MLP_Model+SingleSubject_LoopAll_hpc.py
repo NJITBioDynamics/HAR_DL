@@ -468,9 +468,9 @@ run_experiment()
 # 记录结束时间
 end_time = time.time()
 
-# 计算并打印程序运行总时间
+
 total_time = end_time - start_time
-# 将总时间转换为时分秒
+
 hours, remainder = divmod(total_time, 3600)
 minutes, seconds = divmod(remainder, 60)
 
