@@ -315,7 +315,6 @@ def run_experiment(repeats=20):
             
             print('Test Accuracy: ', accuracy*100)
     
-        # 指定路径并保存结果到csv文件
         save_path_csv = os.path.join(base_save_path,
                                      f"{subject}/Accuracy_csv/",
                                      f'{subject}_50ms_CNNLSTM_IK_Hip_Flexion_WithAngvel_results.csv')
