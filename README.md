@@ -3,7 +3,7 @@ This repository includes 3 parts: data preprocessing (MATLAB), 3 deep learning m
 
 ## **Data preprocessing**
 
-The goal of this repository is ro generate segmented data for selected labeled activities and selected sensor channels for all trials, selected ambulations, and selected subjects.
+The goal of this repository is to generate segmented data for selected labeled activities and selected sensor channels for all trials, selected ambulations, and selected subjects.
 
 This repository should be downloaded and run together with the EpicToolbox by EPIC Lab, GaTech.
 
